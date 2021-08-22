@@ -1,0 +1,20 @@
+.quantitySelectorTitle {
+  color: white;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
+  color: white;
+  background-color: transparent;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button) {
+  color: #ddd;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button) {
+  color: #ddd;
+  font-weight: bold;
+  background-color: transparent;
+}

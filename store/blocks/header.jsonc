@@ -6,9 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -18,6 +16,7 @@
   },
   "flex-layout.row#desktop": {
     "props": {
+      "blockClass": "row-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -28,8 +27,7 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
+      "flex-layout.col#spacer",
       "minicart.v2"
     ]
   },
@@ -48,7 +46,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "url": "assets/images/logo/upmedal.png",
       "width": "80"
     }
   },
@@ -60,10 +58,8 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      "drawer",
-      "logo",
+      "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
@@ -72,8 +68,5 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
-  },
-  "drawer": {
-    "children": []
   }
 }

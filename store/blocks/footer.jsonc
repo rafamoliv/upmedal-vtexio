@@ -2,25 +2,47 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer-desktop"]
   },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer-mobile"]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
+
+  "flex-layout.row#footer-desktop": {
+    "children": ["flex-layout.col#footer-whatsapp"]
   },
-  "image": {
+
+  "flex-layout.row#footer-mobile": {
+    "children": ["flex-layout.col#footer-whatsapp"]
+  },
+
+  // cria um acoluna com logo do whatsapp em cima e link para entrar em contato em baixo
+  "flex-layout.col#footer-whatsapp": {
+    "children": ["image#whatsapp", "link#suporte"],
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": "footer"
+    }
+  },
+
+  "image#whatsapp": {
+    "props": {
+      "width": 24,
+      "alt": "Suporte",
+      "title": "Suporte",
+      "src": "assets/images/icons/whatsapp.png"
+    }
+  },
+
+  "link#suporte": {
+    "props": {
+      "href": "https://wa.link/kcg3rv",
+      "label": "SUPORTE"
     }
   }
 }

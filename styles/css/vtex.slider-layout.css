@@ -1,0 +1,20 @@
+.sliderArrows {
+  margin: 0 15rem;
+  bottom: 0;
+  color: white;
+}
+
+.slideChildrenContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.slideChildrenContainer :global(.vtex-store-components-3-x-imageElement) {
+  height: 18rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.paginationDot--isActive {
+  background-color: #59ff00;
+}

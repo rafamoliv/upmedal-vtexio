@@ -1,0 +1,12 @@
+.productBrandName {
+  color: white;
+  font-weight: bold;
+}
+
+.productName {
+  color: #ccc;
+}
+
+.price {
+  color: #59ff00;
+}

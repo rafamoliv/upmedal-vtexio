@@ -1,0 +1,24 @@
+.gallery {
+  padding: 0;
+}
+
+.galleryItem {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.buttonShowMore {
+  margin: 2rem 0;
+}
+
+.buttonShowMore :global(.vtex-button) {
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.buttonShowMore :global(.vtex-button):hover {
+  border-bottom: 1px solid #59ff00;
+  color: #59ff00;
+}

@@ -1,0 +1,45 @@
+.flexRowContent--row-header {
+  background: #212121;
+}
+
+.flexRow--main-header-mobile {
+  background: #212121;
+}
+
+.flexRowContent--main-header-mobile {
+  background: #212121;
+}
+
+.flexRowContent--container-products-home {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flexRowContent--col-price-buy {
+  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stretchChildrenWidth :global(.vtex-button) {
+  background-color: #59ff00;
+  color: #212121;
+  font-weight: bold;
+  border: none;
+  margin-right: 0.625rem;
+}
+
+.flexRowContent--product-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.flexCol--product-container-col-righ {
+  padding: 2rem;
+}
+
+.flexCol--footer {
+  background-color: #212121;
+  padding: 1rem;
+}

@@ -24,13 +24,34 @@
 
   "product-summary.shelf": {
     "children": [
-      "product-summary-add-to-list-button",
       "product-summary-name",
-      "product-rating-inline",
+      "product-images",
       "product-summary-space",
-      "product-summary-price",
-      "product-identifier.summary",
-      "add-to-cart-button"
+      "flex-layout.row##home-product-price-and-cart"
     ]
+  },
+
+  "flex-layout.row##home-product-price-and-cart": {
+    "children": ["product-selling-price", "add-to-cart-button"],
+    "props": { "blockClass": "col-price-buy" }
+  },
+
+  "add-to-cart-button": {
+    "props": {
+      "onClickBehavior": "go-to-product-page",
+      "text": "Ver detalhes"
+    }
+  },
+
+  // Defini uma tela de produtos não encontrados
+  "search-not-found-layout": {
+    "children": ["rich-text#not-found"]
+  },
+  "rich-text#not-found": {
+    "props": {
+      "text": "# Product not found",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
   }
 }

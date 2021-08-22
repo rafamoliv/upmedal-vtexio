@@ -1,0 +1,20 @@
+.container {
+  background-color: #424242;
+}
+
+.nameContainer {
+  margin-left: 0.8rem;
+}
+
+.productBrand {
+  font-size: 1rem;
+  color: white;
+}
+
+.brandName {
+  font-size: 1.2rem;
+}
+
+.imageNormal {
+  border-radius: 0.5rem;
+}

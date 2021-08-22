@@ -1,0 +1,43 @@
+.container {
+  margin-top: 1.875rem;
+}
+
+.searchBarContainer {
+  width: 40rem;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.productBrand {
+  color: white;
+}
+
+.sellingPrice {
+  color: #59ff00;
+}
+
+.shippingContainer {
+  margin-bottom: 1.875rem;
+}
+
+.shippingContainer :global(.vtex-address-form-4-x-input) {
+  color: white;
+}
+
+.shippingContainer :global(.vtex-input__label) {
+  color: #ccc;
+}

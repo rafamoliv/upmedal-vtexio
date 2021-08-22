@@ -1,0 +1,47 @@
+{
+  // Definição do slide da home
+  "flex-layout.row#slider": {
+    "children": ["slider-layout#home"]
+  },
+
+  "slider-layout#home": {
+    "props": {
+      // quantidade de itens exibidos por vez
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      // configuração de execução automática do slide
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      // configuração de navegação e setas do slide
+      "label": "Products slider",
+      "arrowSize": 12,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "fullWidth": true
+    },
+
+    // imagens exbidas por padrão no slide principal da loja
+    "children": ["image#banner-wood", "image#banner-warrios"]
+  },
+
+  "image#banner-wood": {
+    "props": {
+      "src": "assets/images/slider/BANNER-WOOD.png",
+      "alt": "banner wood",
+      "maxWidth": "70%"
+    }
+  },
+
+  "image#banner-warrios": {
+    "props": {
+      "src": "assets/images/slider/BANNER-WARRIOS.png",
+      "alt": "banner warrios",
+      "maxWidth": "70%"
+    }
+  }
+}
